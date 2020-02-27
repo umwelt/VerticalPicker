@@ -1,0 +1,20 @@
+PODS:
+  - AloeStackView (1.2.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - AloeStackView
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - AloeStackView
+    - SnapKit
+
+SPEC CHECKSUMS:
+  AloeStackView: 8a4ce0efa08128dd78d538372f60c76c224034bb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: c59aec1b688cbb6046cdf947fc117c79291bfd7d
+
+COCOAPODS: 1.8.3

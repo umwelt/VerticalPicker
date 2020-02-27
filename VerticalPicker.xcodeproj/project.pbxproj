@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1F009E9924081B6E007419D8 /* VerticalPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F009E9724081B6E007419D8 /* VerticalPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F009EA1240823EB007419D8 /* SinglePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F009E9F240823EB007419D8 /* SinglePickViewController.swift */; };
+		1F009EA2240823EB007419D8 /* SinglePickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F009EA0240823EB007419D8 /* SinglePickViewController.xib */; };
+		6B95BB9A1AC26A5E0EA8495A /* Pods_VerticalPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DAB20D87D075FC80E5F12D /* Pods_VerticalPicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F009E9424081B6E007419D8 /* VerticalPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VerticalPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F009E9724081B6E007419D8 /* VerticalPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalPicker.h; sourceTree = "<group>"; };
 		1F009E9824081B6E007419D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F009E9F240823EB007419D8 /* SinglePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePickViewController.swift; sourceTree = "<group>"; };
+		1F009EA0240823EB007419D8 /* SinglePickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinglePickViewController.xib; sourceTree = "<group>"; };
+		37DAB20D87D075FC80E5F12D /* Pods_VerticalPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerticalPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9600422C40FB58CDDCB44539 /* Pods-VerticalPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalPicker.debug.xcconfig"; path = "Target Support Files/Pods-VerticalPicker/Pods-VerticalPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		987E9E3CEF8927817BD3E578 /* Pods-VerticalPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalPicker.release.xcconfig"; path = "Target Support Files/Pods-VerticalPicker/Pods-VerticalPicker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B95BB9A1AC26A5E0EA8495A /* Pods_VerticalPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +41,8 @@
 			children = (
 				1F009E9624081B6E007419D8 /* VerticalPicker */,
 				1F009E9524081B6E007419D8 /* Products */,
+				5127EDFB89D9B86AA82B691B /* Pods */,
+				42909A224E11B97EF604EC4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +59,27 @@
 			children = (
 				1F009E9724081B6E007419D8 /* VerticalPicker.h */,
 				1F009E9824081B6E007419D8 /* Info.plist */,
+				1F009E9F240823EB007419D8 /* SinglePickViewController.swift */,
+				1F009EA0240823EB007419D8 /* SinglePickViewController.xib */,
 			);
 			path = VerticalPicker;
+			sourceTree = "<group>";
+		};
+		42909A224E11B97EF604EC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37DAB20D87D075FC80E5F12D /* Pods_VerticalPicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5127EDFB89D9B86AA82B691B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9600422C40FB58CDDCB44539 /* Pods-VerticalPicker.debug.xcconfig */,
+				987E9E3CEF8927817BD3E578 /* Pods-VerticalPicker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F009E9C24081B6E007419D8 /* Build configuration list for PBXNativeTarget "VerticalPicker" */;
 			buildPhases = (
+				57C5D669F34AD046C9C22D78 /* [CP] Check Pods Manifest.lock */,
 				1F009E8F24081B6E007419D8 /* Headers */,
 				1F009E9024081B6E007419D8 /* Sources */,
 				1F009E9124081B6E007419D8 /* Frameworks */,
@@ -95,6 +126,7 @@
 				TargetAttributes = {
 					1F009E9324081B6E007419D8 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -121,16 +153,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F009EA2240823EB007419D8 /* SinglePickViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57C5D669F34AD046C9C22D78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VerticalPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F009E9024081B6E007419D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F009EA1240823EB007419D8 /* SinglePickViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +318,9 @@
 		};
 		1F009E9D24081B6E007419D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9600422C40FB58CDDCB44539 /* Pods-VerticalPicker.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 35Y5S7F4ZL;
@@ -268,6 +329,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = VerticalPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,14 +338,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wodpod.labs.VerticalPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1F009E9E24081B6E007419D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 987E9E3CEF8927817BD3E578 /* Pods-VerticalPicker.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 35Y5S7F4ZL;
@@ -292,6 +358,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = VerticalPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,8 +367,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wodpod.labs.VerticalPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
