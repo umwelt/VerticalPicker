@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SinglePickViewController: UIViewController {
+public class SinglePickViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
